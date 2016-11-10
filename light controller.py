@@ -50,8 +50,9 @@ def offLights():
 while 1:
 
     timeNow = getTime()
-    
-    if int(timeNow[3]) < 3 :
+
+    # Keeps lights on for 18 hrs per day
+    if int(timeNow[3]) < 6 :
         offLights()
         print "Lights off"
     else:
